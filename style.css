@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box; /* Ensure padding and margin are included in width and height */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1b2a; /* Dark background color */
+    color: #ffffff; /* White text color */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(13, 27, 42, 0.9);
+    z-index: 1000;
+}
+
+.sticky-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.menu-icon {
+    display: none; /* Hide the menu icon by default */
+    cursor: pointer;
+}
+
+.menu-icon .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px auto;
+    background-color: #ffffff; /* White color for the bars */
+    transition: all 0.3s;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #f9a825; /* Jellyfish color for links */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffca28; /* Light jellyfish color on hover */
+}
+
+.profile-photo-nav img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.about-section, .projects-section, .skills-section, .contact-section {
+    padding: 60px 20px;
+}
+
+.highlight-name {
+    font-size: 2.5em;
+    text-align: center;
+    background: linear-gradient(90deg, #f9a825, #ffca28);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #f9a825, 0 0 10px #ffca28;
+    }
+    100% {
+        text-shadow: 0 0 10px #f9a825, 0 0 20px #ffca28;
+    }
+}
+
+.download-resume {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f9a825;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.download-resume:hover {
+    background-color: #ffca28; /* Light jellyfish color on hover */
+}
+
+.skills-section {
+    padding: 60px 20px;
+}
+
+.skill {
+    margin: 15px 0;
+}
+
+.progress {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 25px;
+    line-height: 25px; /* Center the text vertically */
+    color: #fff; /* White text color */
+    text-align: center;
+    border-radius: 5px;
+    transition: width 0.5s; /* Smooth transition */
+}
+
+.html {
+    background-color: #f9a825; /* Jellyfish color */
+}
+
+.css {
+    background-color: #ffca28; /* Lighter jellyfish color */
+}
+
+.js {
+    background-color: #ffeb3b; /* Even lighter jellyfish color */
+}
+
+.c {
+    background-color: #ffd54f; /* Soft yellow for C */
+}
+
+.cpp {
+    background-color: #ffe082; /* Softer yellow for C++ */
+}
+
+.java {
+    background-color: #ffb74d; /* Light orange for Java */
+}
+
+.dsa {
+    background-color: #ff9800; /* Orange for DSA */
+}
+
+
+
+
+.projects-section {
+    padding: 60px 20px;
+    text-align: center; /* Center the project links */
+}
+
+.project-links {
+    display: flex;
+    flex-direction: column; /* Stack the project links vertically */
+    gap: 10px; /* Add some space between the links */
+    margin-top: 20px; /* Space above the links */
+}
+
+.project-links a {
+    background-color: #f9a825; /* Jellyfish color */
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-links a:hover {
+    background-color: #ffca28; /* Light jellyfish color on hover */
+}
