@@ -62,7 +62,7 @@ header {
 .profile-photo-nav img {
     width: 80px;
     height: 80px;
-    border-radius: 5px;
+    border-radius: 50%;
     margin-right: 10px;
 }
 
